@@ -1,6 +1,6 @@
 # CLI commands
 
-> This page is part of the [App Framework Documentation](../DOCUMENTATION.md)
+> Go back to the [readme file](../README.md#cli-commands)
 
 <br />
 
