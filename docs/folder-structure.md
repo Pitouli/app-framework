@@ -1,6 +1,6 @@
 # Project folder structure
 
-> Go back to the [README file](../README.md)
+> Go back to the [README file](../README.md#setup)
 
 <br />
 
