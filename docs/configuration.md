@@ -4,6 +4,40 @@
 
 <br />
 
+## Look and feel
+
+- **title**
+- **languages**
+- **style**
+- **theme**
+- **layout**
+- **statusbarVisibility**
+- **statusbarBackgroundColor**
+- **statusbarTextColor**
+- **showPhoneFrame**
+- **limitAppWidth**
+- **limitAppHeight**
+
+## Functionality
+
+## Development
+
+- **firebase**
+
+## Testing
+
+- **useESLint**
+- **useMocha**
+- **useNYC**
+
+## Building
+
+## Deployment
+
+---
+
+<br />
+
 ### Configuration options
 
 Configure your application easily in the *app/config.json* file. For details, please read the *Workflow* section.
