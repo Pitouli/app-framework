@@ -2,6 +2,8 @@
 
 > Go back to the [README file](../README.md#Next-steps)
 
+<br />
+
 ## Framework7
 
 - **window.f7**
