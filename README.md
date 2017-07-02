@@ -6,6 +6,46 @@
 
 **With App Framework, you could spend your time for your next amazing App and not for the tricky stuff around!**
 
+## Requirements
+
+Essentiell
+
+- macOS / Windows / Linux with installed [Node.js](https://nodejs.org/)
+- Basic knowledge of [Node.js and npm](https://docs.npmjs.com/getting-started/what-is-npm) (chapter 1 - 10) for command line interface handling
+- Good knowledge of [Framework7](https://framework7.io/docs/) and [Framework7-Vue](https://framework7.io/vue/) to develop with HTML and JavaScript
+
+Recommend
+
+- Installed [Atom.io](https://atom.io/) with installed package `language-vue-component`
+- Knowledge of [Vue.js](https://vuejs.org/v2/guide/) to make your application state-based and reactive
+- Knowledge of [Firebase](https://firebase.google.com/docs/web/setup) to use as reliable backend service provider
+- Knowledge of [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) to use device hardware API plugins
+- Knowledge of [iOS design guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/) and [Material design guidelines](https://material.io/guidelines/)
+
+## Installation
+
+Creating a new application project *my-app* is easily done in the following four steps:
+
+1. Run `mkdir my-app` to create a new folder *my-app*
+2. Run `cd my-app` to open the folder *my-app*
+3. Run `echo {} > package.json` to create a *package.json* file
+4. Run `npm install --save-dev app-framework` to
+   - install App Framework and its dependencies
+   - create the project folder structure
+   - complete the *package.json* file
+
+After the installation process finished, you should see [this folder structure](docs/folder-structure.md).
+
+## Development
+
+## Testing
+
+## Building
+
+## Deployment
+
+---
+
 ## Features
 
 Setup your project:
