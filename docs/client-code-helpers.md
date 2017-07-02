@@ -1,6 +1,6 @@
 # Client code helpers
 
-> Go back to the [README file](../README.md#Next-steps)
+> Go back to the [readme file](../README.md#next-steps)
 
 <br />
 
