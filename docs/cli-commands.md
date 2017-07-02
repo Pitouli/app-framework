@@ -1,6 +1,6 @@
 # CLI commands
 
-> Go back to the [readme file](../README.md#cli-commands)
+> Go back to the [readme file](../README.md#next-steps)
 
 <br />
 
