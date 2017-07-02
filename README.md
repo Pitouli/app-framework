@@ -10,17 +10,34 @@
 
 Essentiell
 
-- macOS / Windows / Linux with installed [Node.js](https://nodejs.org/)
-- Basic knowledge of [Node.js and npm](https://docs.npmjs.com/getting-started/what-is-npm) (chapter 1 - 10) for command line interface handling
-- Good knowledge of [Framework7](https://framework7.io/docs/) and [Framework7-Vue](https://framework7.io/vue/) to develop with HTML and JavaScript
+- macOS, Windows or Linux as operating system
+- Installed [Node.js](https://nodejs.org/) as development platform (free)
+- Knowledge of [Node.js and npm](https://docs.npmjs.com/getting-started/what-is-npm) (chapter 1 - 10) for command line interface handling
+- Knowledge of [Framework7](https://framework7.io/docs/) and [Framework7-Vue](https://framework7.io/vue/) to develop with HTML and JavaScript
 
 Recommend
 
-- Installed [Atom.io](https://atom.io/) with installed package `language-vue-component`
+- Installed [Atom.io](https://atom.io/) with installed package `language-vue-component` (free)
 - Knowledge of [Vue.js](https://vuejs.org/v2/guide/) to make your application state-based and reactive
 - Knowledge of [Firebase](https://firebase.google.com/docs/web/setup) to use as reliable backend service provider
+
+Optional
+
+
+
+Optional for Apple App Store deployment
+
+- Mac with [macOS](http://www.apple.com/de/macos/) and installed [Xcode](https://developer.apple.com/xcode/) (free)
+- Membership to the [Apple developer program](https://developer.apple.com/programs/) (around 99 USD per year)
 - Knowledge of [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) to use device hardware API plugins
-- Knowledge of [iOS design guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/) and [Material design guidelines](https://material.io/guidelines/)
+- Knowledge of the [iOS design guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
+
+Optional for Google Play Store deployment
+
+- Installed [Android Studio](https://developer.android.com/studio/) width Android SDK
+- Registration to the [Google Play Developer Console](https://play.google.com/apps/publish/signup/) (around 25 USD once)
+- Knowledge of [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) to use device hardware API plugins
+- Knowledge of the [Material design guidelines](https://material.io/guidelines/)
 
 ## Installation
 
