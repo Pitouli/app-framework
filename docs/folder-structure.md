@@ -1,6 +1,6 @@
 # Project folder structure
 
-> This page is part of the [App Framework Documentation](../DOCUMENTATION.md)
+> Go back to the [README file](../README.md)
 
 <br />
 
