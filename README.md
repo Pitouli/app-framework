@@ -21,10 +21,6 @@ Recommend
 - Knowledge of [Vue.js](https://vuejs.org/v2/guide/) to make your application state-based and reactive
 - Knowledge of [Firebase](https://firebase.google.com/docs/web/setup) to use as reliable backend service provider
 
-Optional
-
-
-
 Optional for Apple App Store deployment
 
 - Mac with [macOS](http://www.apple.com/de/macos/) and installed [Xcode](https://developer.apple.com/xcode/) (free)
