@@ -31,7 +31,7 @@ Optional for Apple App Store deployment
 Optional for Google Play Store deployment
 
 - Installed [Android Studio](https://developer.android.com/studio/) width Android SDK (free)
-- Registration to the [Google Play Developer Console](https://play.google.com/apps/publish/signup/) (around 25 USD once)
+- Registration to the [Google Play Developer Console](https://developer.android.com/distribute/console/) (around 25 USD once)
 - Knowledge of [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) to use device hardware API plugins
 - Knowledge of the [Material design guidelines](https://material.io/guidelines/)
 
