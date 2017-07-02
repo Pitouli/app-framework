@@ -2,7 +2,7 @@
 
 **iOS and Android Apps with HTML & JavaScript - develop, test, build and deploy - free and open source!**
 
-![Process](workflow.png)
+![Process](media/process.png)
 
 ## About
 
