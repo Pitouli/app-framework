@@ -6,7 +6,7 @@
 
 **With App Framework, you could spend your time for your next amazing App and not for the tricky stuff around!**
 
-## Requirements
+## Prerequisite
 
 Essentiell
 
@@ -35,7 +35,7 @@ Optional for Google Play Store deployment
 - Knowledge of [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) to use device hardware API plugins
 - Knowledge of the [Material design guidelines](https://material.io/guidelines/)
 
-## Installation
+## Setup
 
 Creating a new application project *my-app* is easily done in the following four steps:
 
