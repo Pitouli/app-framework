@@ -4,9 +4,9 @@
 
 ## About
 
-![Process](media/process.png)
-
 With App Framework, you could spend your time for your next amazing app and not for the tricky stuff around. App Framework combines great pieces of open source code to support your whole workflow with powerful scripts and your app itself with useful helpers. And because App Framework is installed as a module, improvements and bug-fixes are easily to enroll to all of your projects.
+
+![Process](media/process.png)
 
 ## Features
 
