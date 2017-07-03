@@ -2,9 +2,9 @@
 
 **iOS and Android Apps with HTML & JavaScript - develop, test, build and deploy - free and open source!**
 
-![Process](media/process.png)
-
 ## About
+
+![Process](media/process.png)
 
 With App Framework, you could spend your time for your next amazing app and not for the tricky stuff around. App Framework combines great pieces of open source code to support your whole workflow with powerful scripts and your app itself with useful helpers. And because App Framework is installed as a module, improvements and bug-fixes are easily to enroll to all of your projects.
 
@@ -23,7 +23,7 @@ With App Framework, you could spend your time for your next amazing app and not 
 - [ ] Build process with version bump and merging and compression of all your code files, based on [Webpack](https://webpack.js.org/)
 - [ ] Deployment to any FTP server, to Firebase, to Xcode or Android Studio, based on [Cordova](https://cordova.apache.org/)
 
-## Prerequisites
+## Requirements
 
 Essentiell
 
