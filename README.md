@@ -32,7 +32,7 @@
 - **firebaseAuth** - to use the [Firebase authentication](https://firebase.google.com/products/auth/) service
 - **firebaseDatabase** - to use the [Firebase realtime database](https://firebase.google.com/products/auth/) service
 - **firebaseStorage** - to use the [Firebase file storage](https://firebase.google.com/products/auth/) service
-- **firebaseFirestore** - to use the [Firebase document storage](https://firebase.google.com/products/auth/) service
+- **firebaseFirestore** - to use the [Firebase document storage](https://firebase.google.com/products/firestore/) service
 - **restoreHistory** - to restore the app page history in all views
 - **restoreTabs** - to restore selected tabs on all pages
 - **restoreScrollPositions** - to restore scroll positions on all pages
