@@ -24,7 +24,15 @@ Software
 - [Xcode](https://developer.apple.com/xcode/) if you want to deploy to the App Store (requires macOS)
 - [Android Studio](https://developer.android.com/studio/install.html) if you want to deploy to the Play Store
 
-## Workflow commands
+## Quick Start
+
+1. Run `mkdir my-app` to create a new project folder
+2. Run `cd my-app` to open the project folder
+3. Run `echo {} > package.json` to create the package information file
+4. Run `npm install --save-dev app-framework` to install App Framework and setup the project folder
+5. Run `npm run dev` to open the app on the development server
+
+## Workflow Commands
 
 Development
 
@@ -58,6 +66,8 @@ Deployment
 Backup
 
 - `npm run backup` to create a backup according the configuration
+
+## App Plugins
 
 ## Features
 
