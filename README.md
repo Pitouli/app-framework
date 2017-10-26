@@ -18,8 +18,8 @@ Knowledge
 Software
 
 - [Atom.io](https://atom.io/) as the recommend code editor
-  - Package 'language-vue-component' to support .vue files
-  - Package 'linter-eslint' to support live code check
+  - Package *language-vue-component* to support .vue files
+  - Package *linter-eslint* to support live code check
 - [Node.js and npm](https://nodejs.org/) as JavaScript runtime environment
 - [Xcode](https://developer.apple.com/xcode/) if you want to deploy to the App Store (requires macOS)
 - [Android Studio](https://developer.android.com/studio/install.html) if you want to deploy to the Play Store
