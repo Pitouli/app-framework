@@ -108,7 +108,7 @@ Software
 
 ## Documentation
 
-Please read our [![Documentation](media/documentation.png)](DOCUMENTATION.md) for detailed information.
+[![Documentation](media/documentation.png)](DOCUMENTATION.md)
 
 ## Demo App
 
