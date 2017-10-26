@@ -25,23 +25,11 @@
 
 ## Plugin Features
 
-- **iconsFontAwemsome** - to use the [FontAwesome](http://fontawesome.io/) icons
-- **iconsFramework7** - to use the [Framework7](http://framework7.io/icons/) icons
-- **iconsIon** - to use the [Ion](http://ionicons.com/) icons
-- **iconsMaterial** - to use the [Material Icons](https://material.io/icons/)
-- **firebaseAuth** - to use the [Firebase authentication](https://firebase.google.com/products/auth/) service
-- **firebaseDatabase** - to use the [Firebase realtime database](https://firebase.google.com/products/auth/) service
-- **firebaseStorage** - to use the [Firebase file storage](https://firebase.google.com/products/auth/) service
-- **firebaseFirestore** - to use the [Firebase document storage](https://firebase.google.com/products/firestore/) service
-- **restoreHistory** - to restore the app page history in all views
-- **restoreTabs** - to restore selected tabs on all pages
-- **restoreScrollPositions** - to restore scroll positions on all pages
-- **restorePanels** - to restore opened side panels
-- **restorePopups** - to restore opened popups
-- **restoreFormData** - to restore entered form data and focus
-- **preloadImages** - to load all images before application start
-- **preloadFonts** - to load all fonts before application start
-- **phoneFrame** - to offer desktop access with charm
+- **Icon fonts** - comprehensive icon fonts like [FontAwesome](http://fontawesome.io/), [Framework7](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Design](https://material.io/icons/)
+- **Firebase integration** - for the reliable [authentication](https://firebase.google.com/products/auth/), [realtime database](https://firebase.google.com/products/auth/), [file storage](https://firebase.google.com/products/auth/) und [document storage](https://firebase.google.com/products/firestore/) services
+- **State restoration** - to keep the history, tabs, scroll positions, panels, popups, form data and focus
+- **Preloading** - to load images and fonts before application start
+- **Phone frame** - to offer desktop access with charm
 
 ## Workflow Commands
 
