@@ -17,7 +17,7 @@ Knowledge
 
 Software
 
-- [Atom.io](https://atom.io/) as recommend code editor
+- [Atom.io](https://atom.io/) as the recommend code editor
   - Package 'language-vue-component' to support .vue files
   - Package 'linter-eslint' to support live code check
 - [Node.js and npm](https://nodejs.org/) as JavaScript runtime environment
