@@ -6,65 +6,65 @@
 
 ## Basic Features
 
-- **Beautiful UI** - with all well-known components and transitions, based on [Framework7](https://framework7.io/)
-- **Single file components** - [easy to maintain](https://vuejs.org/guide/single-file-components) with [reusable UI elements](https://framework7.io/vue/), based on [Vue.js](https://vuejs.org/)
-- **One code base** - for iOS, Android and the web, realized with [Cordova](https://cordova.apache.org/), supporting [ES2015](https://babeljs.io/learn-es2015/)
-- **Flexible routing** - with [parameters, nesting](http://framework7.io/vue/navigation-router.html) and login protection
-- **Global data object** - to be used for app-wide persistent storage of data and preferences
-- **Offline capability** - to use your app offline in the browser or as homescreen app
-- **Multilingual capability** - to offer your app in several languages
-- **Local development** - on a local server with live update, made for [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
-- **Native development** - on an emulator for iOS or Android or your own device
-- **Integrated tests** - for [code](https://eslint.org/), [units](https://mochajs.org/) and [coverage](https://istanbul.js.org/)
-- **Icon creation** - of favicons, touch icons and splash screens out of a single image file
-- **Optimized builds** - for good scores at [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) or [YSlow](http://yslow.org/)
-- **Downtime-free deployment** - to [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio), [Firebase](https://firebase.google.com/products/hosting/) and any FTP server
-- **Backup solution** - for your project folder, [Firebase database content](https://firebase.google.com/products/database/) and [Firebase user list](https://firebase.google.com/products/auth/)
-- **Lightweight project folder** - well organized and ready to publish on [GitHub](https://github.com/about)
-- **Printable templates** - design your app with paper and pencil
+- [ ] **Beautiful UI** - with all well-known components and transitions, based on [Framework7](https://framework7.io/)
+- [ ] **Single file components** - [easy to maintain](https://vuejs.org/guide/single-file-components) with [reusable UI elements](https://framework7.io/vue/), based on [Vue.js](https://vuejs.org/)
+- [ ] **One code base** - for iOS, Android and the web, realized with [Cordova](https://cordova.apache.org/), supporting [ES2015](https://babeljs.io/learn-es2015/)
+- [ ] **Flexible routing** - with [parameters, nesting](http://framework7.io/vue/navigation-router.html) and login protection
+- [ ] **Global data object** - to be used for app-wide persistent storage of data and preferences
+- [ ] **Offline capability** - to use your app offline in the browser or as homescreen app
+- [ ] **Multilingual capability** - to offer your app in several languages
+- [ ] **Local development** - on a local server with live update, made for [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
+- [ ] **Native development** - on an emulator for iOS or Android or your own device
+- [ ] **Integrated tests** - for [code](https://eslint.org/), [units](https://mochajs.org/) and [coverage](https://istanbul.js.org/)
+- [ ] **Icon creation** - of favicons, touch icons and splash screens out of a single image file
+- [ ] **Optimized builds** - for good scores at [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) or [YSlow](http://yslow.org/)
+- [ ] **Downtime-free deployment** - to [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio), [Firebase](https://firebase.google.com/products/hosting/) and any FTP server
+- [ ] **Backup solution** - for your project folder, [Firebase database content](https://firebase.google.com/products/database/) and [Firebase user list](https://firebase.google.com/products/auth/)
+- [ ] **Lightweight project folder** - well organized and ready to publish on [GitHub](https://github.com/about)
+- [ ] **Printable templates** - design your app with paper and pencil
 
 ## Plugin Features
 
-- **Icon fonts** - comprehensive icon fonts like [FontAwesome](http://fontawesome.io/), [Framework7](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Design](https://material.io/icons/)
-- **Firebase integration** - for [authentication](https://firebase.google.com/products/auth/), [realtime database](https://firebase.google.com/products/auth/), [file storage](https://firebase.google.com/products/auth/) und [document storage](https://firebase.google.com/products/firestore/) services
-- **State restoration** - to keep the history, tabs, scroll positions, panels, popups, form data and focus
-- **Preloading** - to load images and fonts before application start
-- **Phone frame** - to offer desktop access with charm
+- [ ] **Icon fonts** - comprehensive icon fonts like [FontAwesome](http://fontawesome.io/), [Framework7](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Design](https://material.io/icons/)
+- [ ] **Firebase integration** - for [authentication](https://firebase.google.com/products/auth/), [realtime database](https://firebase.google.com/products/auth/), [file storage](https://firebase.google.com/products/auth/) und [document storage](https://firebase.google.com/products/firestore/) services
+- [ ] **State restoration** - to keep the history, tabs, scroll positions, panels, popups, form data and focus
+- [ ] **Preloading** - to load images and fonts before application start
+- [ ] **Phone frame** - to offer desktop access with charm
 
 ## Workflow Commands
 
 Development
 
-- `npm run dev` to start a development server with hot reload
-- `npm run dev:ios` to open a development build on an iOS emulator
-- `npm run dev:android` to open a development build on an Android emulator
-- `npm run dev:firebase` to deploy a development build to Firebase
-- `npm run dev:ftp` to deploy a development build to a FTP server
+- [ ] `npm run dev` to start a development server with hot reload
+- [ ] `npm run dev:ios` to open a development build on an iOS emulator
+- [ ] `npm run dev:android` to open a development build on an Android emulator
+- [ ] `npm run dev:firebase` to deploy a development build to Firebase
+- [ ] `npm run dev:ftp` to deploy a development build to a FTP server
 
 Testing
 
-- `npm run test` to run all tests according the configuration
-- `npm run test:code` to check and fix the code
-- `npm run test:units` to run all unit tests
-- `npm run test:coverage` to check the test coverage
+- [ ] `npm run test` to run all tests according the configuration
+- [ ] `npm run test:code` to check and fix the code
+- [ ] `npm run test:units` to run all unit tests
+- [ ] `npm run test:coverage` to check the test coverage
 
 Building
 
-- `npm run build:patch` to build version x.y.z+1
-- `npm run build:minor` to build version x.y+1.0
-- `npm run build:major` to build version x+1.0.0
+- [ ] `npm run build:patch` to build version x.y.z+1
+- [ ] `npm run build:minor` to build version x.y+1.0
+- [ ] `npm run build:major` to build version x+1.0.0
 
 Deployment
 
-- `npm run deploy` to deploy the latest build according the configuration
-- `npm run deploy:ios` to deploy the latest build to Xcode
-- `npm run deploy:android` to deploy the latest build to Android Studio
-- `npm run deploy:firebase` to deploy the latest build to Firebase
-- `npm run deploy:ftp` to deploy the latest build to a FTP server
+- [ ] `npm run deploy` to deploy the latest build according the configuration
+- [ ] `npm run deploy:ios` to deploy the latest build to Xcode
+- [ ] `npm run deploy:android` to deploy the latest build to Android Studio
+- [ ] `npm run deploy:firebase` to deploy the latest build to Firebase
+- [ ] `npm run deploy:ftp` to deploy the latest build to a FTP server
 
 Backup
 
-- `npm run backup` to create a backup according the configuration
+- [ ] `npm run backup` to create a backup according the configuration
 
 ## Requirements
 
