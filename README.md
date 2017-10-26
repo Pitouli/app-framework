@@ -8,7 +8,21 @@
 
 Knowledge
 
--
+- [Node.js and npm](https://docs.npmjs.com/getting-started/what-is-npm) for command line interface handling
+- [Framework7](https://framework7.io/docs/) and [Framework7-Vue](https://framework7.io/vue/) to develop with HTML and JavaScript
+- [Vue.js](https://vuejs.org/v2/guide/) to make your application state-based and reactive
+- [Firebase](https://firebase.google.com/docs/web/setup) to use the reliable backend service provider
+- [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) to use device hardware API plugins
+- [iOS design guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/) and [Material design guidelines](https://material.io/guidelines/)
+
+Software
+
+- [Atom.io](https://atom.io/) as recommend code editor
+  - Package 'language-vue-component' to support .vue files
+  - Package 'linter-eslint' to support live code check
+- [Node.js and npm](https://nodejs.org/) as JavaScript runtime environment
+- [Xcode](https://developer.apple.com/xcode/) if you want to deploy to the App Store (requires macOS)
+- [Android Studio](https://developer.android.com/studio/install.html) if you want to deploy to the Play Store
 
 ## Workflow commands
 
