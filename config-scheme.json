@@ -3,9 +3,13 @@
     "type": "string",
     "default": "My App"
   },
-  "language": {
+  "defaultLanguage": {
     "regexp": "/^[a-z]{2}$/",
     "default": "en"
+  },
+  "defaultLanguageFallback": {
+    "type": "boolean",
+    "default": false
   },
   "theme": {
     "allow": ["ios", "material", "ios-material", "material-ios"],
@@ -30,10 +34,6 @@
   "statusbarBackgroundColor": {
     "regexp": "/^#[0-9a-f]{6}$/i",
     "default": "#000000"
-  },
-  "changeStatusbarBackgroundColorOnThemeColorChange": {
-    "type": "boolean",
-    "default": true
   },
   "iconBackgroundColor": {
     "regexp": "/^#[0-9a-f]{6}$/i",
@@ -79,6 +79,10 @@
     "default": true
   },
   "restoreHistory": {
+    "type": "boolean",
+    "default": true
+  },
+  "restoreComponentData": {
     "type": "boolean",
     "default": true
   },
@@ -153,6 +157,12 @@
   "useCordovaPlugins": {
     "type": "array",
     "default": []
+  },
+  "cordovaPreferences": {
+    "type": "object",
+    "default": {
+      "DisallowOverscroll": true
+    }
   },
   "resetLocalStorageOnVersionChange": {
     "type": "boolean",

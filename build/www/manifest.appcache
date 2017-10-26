@@ -1,6 +1,6 @@
 CACHE MANIFEST
-#ver:v1.9.10
-#plugin:4.8.0
+#ver:v1.14.7
+#plugin:4.8.4
 
 CACHE:
 /fonts/Framework7Icons-Regular.bb6aae4.eot
@@ -18,14 +18,14 @@ CACHE:
 /img/firebase.472015e.png
 /img/theme-ios.48f912f.png
 /img/theme-material.381a2ea.png
-/app.083dbe9.js
-/init.083dbe9.js
-/material.083dbe9.js
-/ios.083dbe9.js
-/app.083dbe9.css
-/init.083dbe9.css
-/ios.083dbe9.css
-/material.083dbe9.css
+/app.fecb98c.js
+/init.fecb98c.js
+/material.fecb98c.js
+/ios.fecb98c.js
+/app.fecb98c.css
+/init.fecb98c.css
+/ios.fecb98c.css
+/material.fecb98c.css
 /
 /offline-service-worker.js
 /manifest.json

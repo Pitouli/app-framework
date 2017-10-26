@@ -2,8 +2,7 @@
 
 'use strict'
 
-import set from 'lodash/set'
-import unset from 'lodash/unset'
+import _ from 'lodash'
 
 function initCordova (callback) {
   if (window.cordova !== undefined) {
@@ -60,6 +59,33 @@ let manageComponentData = {
       } else {
         return null
       }
+    }
+  }
+}
+let easierGlobalDataObject = {
+  computed: {
+    // Legacy support
+    $get () {
+      return this.$root.data
+    }
+  },
+  methods: {
+    $db (...args) {
+      return this.$root.$db(...args)
+    },
+    // Legacy support
+    $save (...args) {
+      this.$root.saveData(...args)
+    },
+    $remove (...args) {
+      this.$root.removeData(...args)
+    }
+  }
+}
+let easierLanguagePattern = {
+  methods: {
+    $lang (key, data = null) {
+      return this.$root.getLanguagePattern(key, data)
     }
   }
 }
@@ -374,30 +400,54 @@ mixins.manageGlobalDataObject = {
   },
   // Methods to add or remove data
   methods: {
+    $db (...args) {
+      // Check arguments
+      if (args.length < 1 || args.length > 2 || typeof args[0] !== 'string') {
+        throw new Error('$db() should have one or two arguments, the first one should be a string')
+      // Read data
+      } else if (args.length === 1) {
+        return _.get(this.data, args[0], undefined)
+      // Write/Remove data
+      } else {
+        // Clone current data
+        const data = _.cloneDeep(this.data)
+        // Update data
+        if (args[1] !== null) {
+          _.set(data, args[0], args[1])
+        // Remove data
+        } else {
+          _.unset(data, args[0])
+        }
+        // Save data to Vue object
+        this.$set(this, 'data', data)
+        // Save data to local storage
+        if (window.cordova) {
+          window.NativeStorage.setItem('data', data)
+        } else {
+          window.localStorage.data = JSON.stringify(this.data)
+        }
+      }
+    },
+    // Legacy support
     saveData: function (path, value) {
-      // Clone current data
-      let data = JSON.parse(JSON.stringify(this.data))
-      // Add value to path
-      data = set(data, path, value)
-      // Update root data object
-      this.$set(this, 'data', data)
-      // Update local storage
-      window.localStorage.data = JSON.stringify(this.data)
+      this.$db(path, value)
     },
     removeData: function (path) {
-      // Clone current data
-      let data = JSON.parse(JSON.stringify(this.data))
-      // Remove path
-      unset(data, path)
-      // Update root data object
-      this.$set(this, 'data', data)
-      // Update local storage
-      window.localStorage.data = JSON.stringify(this.data)
+      this.$db(path, null)
     }
   },
   // Restore local storage
   created: function () {
-    this.data = window.localStorage.data !== undefined ? JSON.parse(window.localStorage.data) : {}
+    if (window.cordova) {
+      const self = this
+      window.NativeStorage.getItem('data', function (data) {
+        self.data = data
+      }, function () {
+        self.data = {}
+      })
+    } else {
+      this.data = window.localStorage.data !== undefined ? JSON.parse(window.localStorage.data) : {}
+    }
   }
 }
 mixins.appMode = {
@@ -641,11 +691,6 @@ mixins.manageColor = {
           if (/^theme-[a-z]+$/.test(cName)) window.Dom7('body').removeClass(cName)
         })
         window.Dom7('body').addClass('theme-' + newColor)
-        // Update status bar background color accordingly
-        if (this.config.changeStatusbarBackgroundColorOnThemeColorChange === true) {
-          this.statusbarTextColor = newColor === 'white' ? 'black' : 'white'
-          this.statusbarBackgroundColor = newColor === 'white' && window.cordova === undefined ? '000000' : this.colors[this.theme][newColor]
-        }
       // New color is not valid
       } else {
         // Rollback old, config or default value
@@ -1119,6 +1164,31 @@ mixins.manageState = {
     }
   }
 }
+mixins.languagePattern = {
+  data: {
+    languages: [],
+    languagePattern: {}
+  },
+  created () {
+    this.languages = process.env.LANGUAGES.split(',')
+    this.languages.forEach((lang) => {
+      this.languagePattern[lang] = require(process.env.APP_ROOT_FROM_SCRIPTS + 'lang/' + lang + '.json')
+    })
+  },
+  methods: {
+    getLanguagePattern (key, data) {
+      const requestedText = this.languagePattern[this.language] ? this.languagePattern[this.language][key] : undefined
+      const defaultText = this.languagePattern[this.config.defaultLanguage] ? this.languagePattern[this.config.defaultLanguage][key] : undefined
+      let text = requestedText || defaultText || (data !== null ? '{{' + key + ', ' + JSON.stringify(data) + '}}' : '{{' + key + '}}')
+      if (data !== null) {
+        for (let item in data) {
+          text = text.replace(new RegExp('\\{\\{' + item + '\\}\\}', 'g'), data[item])
+        }
+      }
+      return text
+    }
+  }
+}
 
 function initF7VueApp () {
   // Load Vue
@@ -1135,7 +1205,11 @@ function initF7VueApp () {
   // Load image-uploader component
   vue.component('image-uploader', require('./image-uploader.vue'))
   // Use global mixins
-  vue.mixin(manageComponentData)
+  vue.mixin(easierGlobalDataObject)
+  vue.mixin(easierLanguagePattern)
+  if (config.restoreComponentData) {
+    vue.mixin(manageComponentData)
+  }
   // Get local mixins as array
   let useMixins = Object.keys(mixins).map(mixin => mixins[mixin])
   // Init Framework7-Vue application

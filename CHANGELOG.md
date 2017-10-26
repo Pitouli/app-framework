@@ -2,7 +2,82 @@
 
 > This page is part of the [App Framework Documentation](DOCUMENTATION.md)
 
-<br />
+## Version 1.14.7
+
+Released on 2017-10-18
+
+### Bug-fixes
+
+- [x] [#675 - Missing iOS Marketing Icon](https://github.com/scriptPilot/app-framework/issues/675)
+- [x] [#676 - Several icons and launch screens are missing in Xcode](https://github.com/scriptPilot/app-framework/issues/676)
+
+### New features
+
+- [x] [#243 - Use persistent storage for data](https://github.com/scriptPilot/app-framework/issues/243)
+
+## Version 1.13.3
+
+Released on 2017-09-04
+
+### Bug-fixes
+
+- [x] [#660 - App folder structure is not created properly after installation](https://github.com/scriptPilot/app-framework/issues/660)
+
+## Version 1.13.2
+s
+Released on 2017-09-02
+
+### New features
+
+- [x] [#649 - Use language files for multilingual apps](https://github.com/scriptPilot/app-framework/issues/649) ([read the docs](docs/language-files.md))
+
+### Bug-fixes
+
+- [x] [#657 - Error on global data sub item request](https://github.com/scriptPilot/app-framework/issues/657)
+
+### Improvements
+
+- [x] Simplified the global data object handling ([read the docs](docs/data-object.md))
+
+## Version 1.12.1
+
+Released on 2017-08-29
+
+### Improvements
+
+- [x] [#644 - Make global data object easier to use](https://github.com/scriptPilot/app-framework/issues/644) ([read the docs](docs/data-object.md))
+
+## Version 1.11.0
+
+Released on 2017-08-28
+
+### New features
+
+- [x] [#643 - Deactivate automatic component data restoration](https://github.com/scriptPilot/app-framework/issues/643)
+
+## Version 1.10.0
+
+Released on 2017-07-04
+
+### New features
+
+- [x] [#616 - Add custom Cordova preferences](https://github.com/scriptPilot/app-framework/issues/616)
+
+## Version 1.9.16
+
+Released on 2017-07-03
+
+### Bug-fixes
+
+- [x] [#346 - Error on npm run ftp without proper FTP server data](https://github.com/scriptPilot/app-framework/issues/346)
+- [x] [#589 - Status bar text color not restored initially](https://github.com/scriptPilot/app-framework/issues/589)
+- [x] [#592 - npm run android failed - Float types not allowed for versionCode](https://github.com/scriptPilot/app-framework/issues/592)
+- [x] [#620 - Snapshot is created at initial installation](https://github.com/scriptPilot/app-framework/issues/620)
+- [x] [#626 - npm run ios fails with "cannot read property 'replace' of undefined"](https://github.com/scriptPilot/app-framework/issues/626)
+
+### Improvements
+
+- [x] Removed configuration option "changeStatusbarBackgroundColorOnThemeColorChange" ([read the docs](docs/status-bar-style.md))
 
 ## Version 1.9.10
 

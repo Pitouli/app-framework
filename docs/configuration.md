@@ -46,14 +46,14 @@ Configure your application easily in the *app/config.json* file. For details, pl
 Option | Allowed | Default
 :--- |:--- |:---
 title | *string* | My App
-language | /^[a-z]{2}$/ | en
+defaultLanguage | /^[a-z]{2}$/ | en
+defaultLanguageFallback | *boolean* | false
 theme | ios, material, ios-material, material-ios | material
 color | /^[a-z]+$/ | indigo
 layout | default, white, dark | default
 statusbarVisibility | *boolean* | true
 statusbarTextColor | black, white | white
 statusbarBackgroundColor | /^#[0-9a-f]{6}$/i | #000000
-changeStatusbarBackgroundColorOnThemeColorChange | *boolean* | true
 iconBackgroundColor | /^#[0-9a-f]{6}$/i | #ffffff
 useIconFonts | *object* |
 &nbsp;&nbsp;&nbsp;framework7 | *boolean* | false
@@ -66,6 +66,7 @@ showPhoneFrameOnDesktop | *boolean* | true
 framework7parameters | *object* | {}
 materialSubnavbarFix | *boolean* | true
 restoreHistory | *boolean* | true
+restoreComponentData | *boolean* | true
 completeRoutesFile | *boolean* | true
 firebase | *object* |
 &nbsp;&nbsp;&nbsp;apiKey | *string* |
@@ -87,6 +88,7 @@ devFirebase | *object* |
 appStoreId | *string* |
 playStoreId | *string* |
 useCordovaPlugins | *array* | []
+cordovaPreferences | *object* | {"DisallowOverscroll":true}
 resetLocalStorageOnVersionChange | *boolean* | false
 preloadImages | *boolean* | true
 buildSourcemaps | *boolean* | false

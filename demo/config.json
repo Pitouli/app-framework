@@ -1,13 +1,13 @@
 {
   "title": "App Framework",
-  "language": "en",
+  "defaultLanguage": "en",
+  "defaultLanguageFallback": false,
   "theme": "material-ios",
   "color": "indigo",
   "layout": "default",
   "statusbarVisibility": false,
   "statusbarTextColor": "white",
   "statusbarBackgroundColor": "#3f51b5",
-  "changeStatusbarBackgroundColorOnThemeColorChange": true,
   "iconBackgroundColor": "#ffffff",
   "useIconFonts": {
     "framework7": true,
@@ -21,6 +21,7 @@
   "framework7parameters": {},
   "materialSubnavbarFix": true,
   "restoreHistory": true,
+  "restoreComponentData": true,
   "completeRoutesFile": true,
   "firebase": {
     "apiKey": "AIzaSyAvzTiqd9fKR-h47Uxl4iXwqSMU1VjGdII",
@@ -47,6 +48,9 @@
     "cordova-plugin-camera",
     "cordova-plugin-file"
   ],
+  "cordovaPreferences": {
+    "DisallowOverscroll": true
+  },
   "resetLocalStorageOnVersionChange": false,
   "preloadImages": true,
   "buildSourcemaps": false,

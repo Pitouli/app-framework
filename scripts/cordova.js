@@ -125,10 +125,16 @@ let updateCordovaConfig = function (callback) {
   // Start configuration
   let config = {}
   // Add widget
+  const d = new Date()
+  const devVersion = d.getFullYear() - 2000 +
+                     (d.getMonth() < 9 ? '0' : '') + (d.getMonth() + 1) +
+                     (d.getDate() < 10 ? '0' : '') + d.getDate() +
+                     (d.getHours() < 10 ? '0' : '') + d.getHours() +
+                     (d.getMinutes() < 10 ? '0' : '') + d.getMinutes()
   config = {
     '$': {
       'id': storeId,
-      'version': env.arg.version === 'dev' ? '0.0.' + Date.now() : env.arg.version,
+      'version': env.arg.version === 'dev' ? '0.0.' + devVersion : env.arg.version,
       'xmlns': 'http://www.w3.org/ns/widgets',
       'xmlns:cdv': 'http://cordova.apache.org/ns/1.0'
     }
@@ -176,11 +182,19 @@ let updateCordovaConfig = function (callback) {
       'src': 'index.html'
     }
   }
-  // Disallow overscroll
-  config.preference = {
-    '$': {
-      'name': 'DisallowOverscroll',
-      'value': true
+  // Apply custom Cordova preferences
+  if (env.cfg.cordovaPreferences !== undefined) {
+    var preferences = config.preference ? [config.preference] : []
+    for (var key in env.cfg.cordovaPreferences) {
+      preferences.push({
+        '$': {
+          'name': key,
+          'value': env.cfg.cordovaPreferences[key]
+        }
+      })
+    }
+    if (preferences.length > 0) {
+      config.preference = preferences
     }
   }
   // Add Android platform
@@ -340,6 +354,9 @@ let installCordovaPlugins = function (callback, pluginList) {
     if (pluginList.indexOf('cordova-plugin-statusbar') === -1) {
       pluginList.push('cordova-plugin-statusbar')
     }
+    if (pluginList.indexOf('cordova-plugin-nativestorage') === -1) {
+      pluginList.push('cordova-plugin-nativestorage')
+    }
   }
   if (Array.isArray(pluginList) && pluginList.length > 0) {
     let nextPlugin = pluginList.shift()
@@ -360,7 +377,20 @@ let addCordovaPlatforms = function (callback) {
   alert('Cordova platform installation ongoing - please wait ...')
   if (env.arg.ios === true || env.arg.xcode === true) {
     cmd(binDir, 'cordova platform add ios', function () {
+      // workaround: #626 - npm run ios fails with <cannot read property 'replace' of undefined>
+      try {
+        const filename = path.resolve(binDir, 'platforms/ios/cordova/node_modules/ios-sim/src/lib.js')
+        const string = 'list.push(util.format(\'%s, %s\', name_id_map[ deviceName ].replace(/^com.apple.CoreSimulator.SimDeviceType./, \'\'), runtime.replace(/^iOS /, \'\')));'
+        const wrapper = 'if (name_id_map[deviceName] && runtime) { ' + string + ' }'
+        let filecontent = fs.readFileSync(filename, 'utf8')
+        filecontent = filecontent.replace(string, wrapper)
+        fs.writeFileSync(filename, filecontent)
+      } catch (err) {
+        alert('Failed to apply workaround #626.')
+      }
+      // Alert
       alert('Cordova platform installation done for Android.')
+      // Callback
       callback()
     }, function () {
       alert('Cordova platform installation failed for iOS.', 'issue')
