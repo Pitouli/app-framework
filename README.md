@@ -4,33 +4,44 @@
 
 ![](media/process.png)
 
-## Requirements
+## Basic Features
 
-Knowledge
+- **Beautiful UI** - with all well-known components and transitions, based on [Framework7](https://framework7.io/)
+- **Single file components** - [easy to maintain](https://vuejs.org/guide/single-file-components) with [reusable UI elements](https://framework7.io/vue/), based on [Vue.js](https://vuejs.org/)
+- **One code base** - for iOS, Android and the web, realized with [Cordova](https://cordova.apache.org/), supporting [ES2015](https://babeljs.io/learn-es2015/)
+- **Flexible routing** - with [parameters, nesting](http://framework7.io/vue/navigation-router.html) and login protection
+- **Global data object** - to be used for app-wide persistent storage of data and preferences
+- **Offline capability** - to use your app offline in the browser or as homescreen app
+- **Multilingual capability** - to offer your app in several languages
+- **Local development** - on a local server with live update, made for [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
+- **Native development** - on an emulator for iOS or Android or your own device
+- **Integrated tests** - for [code](https://eslint.org/), [units](https://mochajs.org/) and [coverage](https://istanbul.js.org/)
+- **Icon creation** - of favicons, touch icons and splash screens out of a single image file
+- **Optimized builds** - for good scores at [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) or [YSlow](http://yslow.org/)
+- **Downtime-free deployment** - to [Xcode](https://developer.apple.com/xcode/), [Android Studio](https://developer.android.com/studio), [Firebase](https://firebase.google.com/products/hosting/) and any FTP server
+- **Backup solution** - for your project folder, [Firebase database content](https://firebase.google.com/products/database/) and [Firebase user list](https://firebase.google.com/products/auth/)
+- **Lightweight project folder** - well organized and ready to publish on [GitHub](https://github.com/about)
+- **Printable templates** - design your app with paper and pencil
 
-- [Node.js and npm](https://docs.npmjs.com/getting-started/what-is-npm) for command line interface handling
-- [Framework7](https://framework7.io/docs/) and [Framework7-Vue](https://framework7.io/vue/) to develop with HTML and JavaScript
-- [Vue.js](https://vuejs.org/v2/guide/) if you want to make your application state-based and reactive
-- [Firebase](https://firebase.google.com/docs/web/setup) if you want to use the reliable backend service provider
-- [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) if you want to use device hardware API plugins
-- [iOS design guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/) and [Material design guidelines](https://material.io/guidelines/) if you want to be conformable
+## Plugin Features
 
-Software
-
-- [Atom.io](https://atom.io/) as the recommend code editor
-  - Package *language-vue-component* to support .vue files
-  - Package *linter-eslint* to support live code checking
-- [Node.js and npm](https://nodejs.org/) as JavaScript runtime environment
-- [Xcode](https://developer.apple.com/xcode/) if you want to deploy to the App Store (requires macOS)
-- [Android Studio](https://developer.android.com/studio/install.html) if you want to deploy to the Play Store
-
-## Quick Start
-
-1. Run `mkdir my-app` to create a new project folder
-2. Run `cd my-app` to open the project folder
-3. Run `echo {} > package.json` to create the package information file
-4. Run `npm install --save-dev app-framework` to install App Framework and setup the project folder
-5. Run `npm run dev` to open the app on the development server
+- **iconsFontAwemsome** - to use the [FontAwesome](http://fontawesome.io/) icons
+- **iconsFramework7** - to use the [Framework7](http://framework7.io/icons/) icons
+- **iconsIon** - to use the [Ion](http://ionicons.com/) icons
+- **iconsMaterial** - to use the [Material Icons](https://material.io/icons/)
+- **firebaseAuth** - to use the [Firebase authentication](https://firebase.google.com/products/auth/) service
+- **firebaseDatabase** - to use the [Firebase realtime database](https://firebase.google.com/products/auth/) service
+- **firebaseStorage** - to use the [Firebase file storage](https://firebase.google.com/products/auth/) service
+- **firebaseFirestore** - to use the [Firebase document storage](https://firebase.google.com/products/auth/) service
+- **restoreHistory** - to restore the app page history in all views
+- **restoreTabs** - to restore selected tabs on all pages
+- **restoreScrollPositions** - to restore scroll positions on all pages
+- **restorePanels** - to restore opened side panels
+- **restorePopups** - to restore opened popups
+- **restoreFormData** - to restore entered form data and focus
+- **preloadImages** - to load all images before application start
+- **preloadFonts** - to load all fonts before application start
+- **phoneFrame** - to offer desktop access with charm
 
 ## Workflow Commands
 
@@ -67,65 +78,37 @@ Backup
 
 - `npm run backup` to create a backup according the configuration
 
-## App Plugins
+## Requirements
 
-## Features
+Knowledge
 
-Setup your project:
+- [Node.js and npm](https://docs.npmjs.com/getting-started/what-is-npm) for command line interface handling
+- [Framework7](https://framework7.io/docs/) and [Framework7-Vue](https://framework7.io/vue/) to develop with HTML and JavaScript
+- [Vue.js](https://vuejs.org/v2/guide/) if you want to make your application state-based and reactive
+- [Firebase](https://firebase.google.com/docs/web/setup) if you want to use the reliable backend service provider
+- [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) if you want to use device hardware API plugins
+- [iOS design guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/) and [Material design guidelines](https://material.io/guidelines/) if you want to be conformable
 
-- Creation of a lightweight and well-organized project folder, ready to publish on [GitHub](https://github.com/about)
+Software
 
-Design your application:
+- [Atom.io](https://atom.io/) as the recommend code editor
+  - Package *language-vue-component* to support .vue files
+  - Package *linter-eslint* to support live code checking
+- [Node.js and npm](https://nodejs.org/) as JavaScript runtime environment
+- [Xcode](https://developer.apple.com/xcode/) if you want to deploy to the App Store (requires macOS)
+- [Android Studio](https://developer.android.com/studio/install.html) if you want to deploy to the Play Store
 
-- Printable [template](design/smartphone-template.pdf) to design your application with paper and pencil
-- Templates for your icon design - as [PDF for sketching](design/icon-template.pdf) and [PPTX](design/icon-template.pptx) for drawing
+## Quick Start
 
-Develop your application:s
-
-- Realize beautiful user interfaces with all well-known components and transitions, based on [Framework7](https://framework7.io/)
-- Easy to maintain [single file components](https://vuejs.org/guide/single-file-components) with [reusable UI elements](https://framework7.io/vue/), based on [Vue.js](https://vuejs.org/)
-- One code base for all devices with HTML, CSS and JavaScript - realized with [Cordova](https://cordova.apache.org/), supporting [ES2015](https://babeljs.io/learn-es2015/)
-- Comprehensive icon fonts like [FontAwesome](http://fontawesome.io/), [Framework7](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Icons](https://material.io/icons/) out of the box
-- Well prepared to use [Firebase authentication](https://firebase.google.com/products/auth/), [realtime database](https://firebase.google.com/products/database/) and [storage services](https://firebase.google.com/products/storage/)
-- State kept for history, tabs, scroll positions, focus, panels, modals, form inputs and page component data
-- Global data object to use the same data and setting across your whole application
-- [Flexible routing](http://framework7.io/vue/navigation-router.html) with dynamic, nesting and login protection
-- Offline capability, image preloading and multi-language support out of the box
-
-Test your application:
-
-- Integrated code check for [correctness](http://eslint.org/) and automatic fix for [standard conformity](http://standardjs.com/)
-- Local development server with live reload, perfectly to use together with [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
-- Test your application on any iOS or Android device with an emulator or on your own device
-- Use a development Firebase project with automatic [database](https://firebase.google.com/products/database/) and [storage](https://firebase.google.com/products/storage/) rule update
-
-Build your application:
-
-- Build process with version bump and compression of all HTML, CSS, JavaScript and image files
-- Generation of favicons, touch icons and splash screens out of a single image file
-- Phone frame around your application on big screens, so you can offer desktop access with charm
-- Automatic build as web application, to be used online and offline in the browser
-- Automatic [Apple Xcode](https://developer.apple.com/xcode/) project build with [Cordova](https://cordova.apache.org/)
-- Automatic [Android Studio](https://developer.android.com/studio) project build with [Cordova](https://cordova.apache.org/)
-- App Framework builds score very good at performance tests like [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) or [YSlow](http://yslow.org/)
-
-Deploy your application:
-
-- Deployment without downtime
-  - to any FTP server as Web App
-  - to the [Firebase Hosting service](https://firebase.google.com/products/hosting/) as Web App
-  - to the [Apple App Store](https://itunes.apple.com/) as native iOS App
-  - to the [Google Play Store](https://play.google.com/) as native Android App
-- Easy rollback solutions
-
-Backup your project:
-
-- Download the [Firebase database content](https://firebase.google.com/products/database/) and [user list](https://firebase.google.com/products/auth/) to local JSON files
-- Snapshot creation of all important project files to backup on any external drive or cloud service
+1. Run `mkdir my-app` to create a new project folder
+2. Run `cd my-app` to open the project folder
+3. Run `echo {} > package.json` to create the package information file
+4. Run `npm install --save-dev app-framework` to install App Framework and setup the project folder
+5. Run `npm run dev` to open the app on the development server
 
 ## Documentation
 
-[![Documentation](media/documentation.png)](DOCUMENTATION.md)
+Please read our [![Documentation](media/documentation.png)](DOCUMENTATION.md) for detailed information.
 
 ## Demo App
 
