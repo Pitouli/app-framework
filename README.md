@@ -26,7 +26,7 @@
 ## Plugin Features
 
 - **Icon fonts** - comprehensive icon fonts like [FontAwesome](http://fontawesome.io/), [Framework7](http://framework7.io/icons/), [Ion](http://ionicons.com/) and [Material Design](https://material.io/icons/)
-- **Firebase integration** - for the reliable [authentication](https://firebase.google.com/products/auth/), [realtime database](https://firebase.google.com/products/auth/), [file storage](https://firebase.google.com/products/auth/) und [document storage](https://firebase.google.com/products/firestore/) services
+- **Firebase integration** - for [authentication](https://firebase.google.com/products/auth/), [realtime database](https://firebase.google.com/products/auth/), [file storage](https://firebase.google.com/products/auth/) und [document storage](https://firebase.google.com/products/firestore/) services
 - **State restoration** - to keep the history, tabs, scroll positions, panels, popups, form data and focus
 - **Preloading** - to load images and fonts before application start
 - **Phone frame** - to offer desktop access with charm
