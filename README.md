@@ -10,16 +10,16 @@ Knowledge
 
 - [Node.js and npm](https://docs.npmjs.com/getting-started/what-is-npm) for command line interface handling
 - [Framework7](https://framework7.io/docs/) and [Framework7-Vue](https://framework7.io/vue/) to develop with HTML and JavaScript
-- [Vue.js](https://vuejs.org/v2/guide/) to make your application state-based and reactive
-- [Firebase](https://firebase.google.com/docs/web/setup) to use the reliable backend service provider
-- [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) to use device hardware API plugins
-- [iOS design guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/) and [Material design guidelines](https://material.io/guidelines/)
+- [Vue.js](https://vuejs.org/v2/guide/) if you want to make your application state-based and reactive
+- [Firebase](https://firebase.google.com/docs/web/setup) if you want to use the reliable backend service provider
+- [Cordova/PhoneGap](https://cordova.apache.org/docs/en/latest/) if you want to use device hardware API plugins
+- [iOS design guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/) and [Material design guidelines](https://material.io/guidelines/) if you want to be conformable
 
 Software
 
 - [Atom.io](https://atom.io/) as the recommend code editor
   - Package *language-vue-component* to support .vue files
-  - Package *linter-eslint* to support live code check
+  - Package *linter-eslint* to support live code checking
 - [Node.js and npm](https://nodejs.org/) as JavaScript runtime environment
 - [Xcode](https://developer.apple.com/xcode/) if you want to deploy to the App Store (requires macOS)
 - [Android Studio](https://developer.android.com/studio/install.html) if you want to deploy to the Play Store
@@ -40,7 +40,7 @@ Development
 - `npm run dev:ios` to open a development build on an iOS emulator
 - `npm run dev:android` to open a development build on an Android emulator
 - `npm run dev:firebase` to deploy a development build to Firebase
-- `npm run dev:ftp` tp deploy a development build to a FTP server
+- `npm run dev:ftp` to deploy a development build to a FTP server
 
 Testing
 
