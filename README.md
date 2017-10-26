@@ -6,6 +6,41 @@
 
 **With App Framework, you could spend your time for your next amazing App and not for the tricky stuff around!**
 
+## Workflow commands
+
+Development
+
+- `npm run dev` to start a development server with hot reload
+- `npm run dev:ios` to open a development build on an iOS emulator
+- `npm run dev:android` to open a development build on an Android emulator
+- `npm run dev:firebase` to deploy a development build to Firebase
+- `npm run dev:ftp` tp deploy a development build to a FTP server
+
+Testing
+
+- `npm run test` to run all tests according the configuration
+- `npm run test:code` to check and fix the code
+- `npm run test:units` to run all unit tests
+- `npm run test:coverage` to check the test coverage
+
+Building
+
+- `npm run build:patch` to build version x.y.z+1
+- `npm run build:minor` to build version x.y+1.0
+- `npm run build:major` to build version x+1.0.0
+
+Deployment
+
+- `npm run deploy` to deploy the latest build according the configuration
+- `npm run deploy:ios` to deploy the latest build to Xcode
+- `npm run deploy:android` to deploy the latest build to Android Studio
+- `npm run deploy:firebase` to deploy the latest build to Firebase
+- `npm run deploy:ftp` to deploy the latest build to a FTP server
+
+Backup
+
+- `npm run backup` to create a backup according the configuration
+
 ## Features
 
 Setup your project:
