@@ -31,6 +31,14 @@ let getConfig = function (callback) {
         alert('Reading the "ftp-config.json" file failed.', 'issue')
       } else {
         if (config.host !== undefined && config.port !== undefined && config.user !== undefined && config.password !== undefined) {
+					// If no remote folder has been defined
+					if (config.folder === undefined) {
+						// We use directly the root folder
+						config.folder = '';
+					} else {
+						// We ensure there is no slash at any end
+						config.folder = config.folder.replace(/^\/|\/$/g, '');
+					}
           callback(config)
         } else {
           alert('File "ftp-config.json" must contain object with host, port, user and password properties.', 'error')
@@ -42,7 +50,8 @@ let getConfig = function (callback) {
       host: '',
       port: '21',
       user: '',
-      password: ''
+      password: '',
+      folder: ''
     }
     fs.writeJson(configFile, standardConfig, function (err) {
       if (!err) {
@@ -96,10 +105,10 @@ let uploadFiles = function (client, localFolder, remoteFolder, files, callback) 
     })
   }
 }
-let uploadBuildFolder = function (client, callback) {
+let uploadBuildFolder = function (client, config, callback) {
   alert('Uploading build folder - please wait ...')
   let localFolder = abs(env.cache, 'snapshots', 'build-' + env.arg.version, 'build/www')
-  let remoteFolder = 'build-' + env.arg.version
+  let remoteFolder = config.folder + '/build-' + env.arg.version
   if (!found(localFolder)) {
     alert('Local folder not found.', 'issue')
   }
@@ -131,7 +140,7 @@ let uploadBuildFolder = function (client, callback) {
     }
   })
 }
-let updateHtaccess = function (client, callback) {
+let updateHtaccess = function (client, config, callback) {
   alert('Updating .htaccess file - please wait ...')
   let cacheDir = abs(env.cache, 'ftp')
   let htaccess = 'RewriteEngine On\n' +
@@ -144,7 +153,7 @@ let updateHtaccess = function (client, callback) {
     if (!err) {
       fs.writeFile(abs(cacheDir, '.htaccess'), htaccess, function (err) {
         if (!err) {
-          client.put(abs(cacheDir, '.htaccess'), '.htaccess', function (err) {
+          client.put(abs(cacheDir, '.htaccess'), config.folder + '/.htaccess', function (err) {
             if (!err) {
               callback()
             } else {
@@ -166,8 +175,8 @@ alert('FTP deployment ongoing - please wait ...')
 getConfig(function (config) {
   cmd(__dirname, 'node cache-version --version ' + env.arg.version, function () {
     connect(config, function (client) {
-      uploadBuildFolder(client, function () {
-        updateHtaccess(client, function () {
+      uploadBuildFolder(client, config, function () {
+        updateHtaccess(client, config, function () {
           client.end()
           alert('FTP deployment done for version ' + env.arg.version + '.')
         })
